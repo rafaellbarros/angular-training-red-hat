@@ -1,3 +1,21 @@
-<p>
-  user works!
-</p>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+    First name: <input type="text" name="theFirstName" ngModel> <br>
+  
+    Last name: <input type="text" name="theLastName" ngModel> <br>
+  
+    City: <input type="text" name="theCity" ngModel> <br><br>
+  
+    <input type="submit" value="Submit">
+  
+  </form>
+
+  <hr>
+  
+  <h3>List of Users</h3>
+  
+  <ul>
+      <li *ngFor="let tempUser of usersList">
+          {{tempUser.firstName}} {{tempUser.lastName}} - {{tempUser.city}}
+      </li>
+  </ul>
