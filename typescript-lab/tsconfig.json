@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
       "module": "commonjs",
+      "charset": "utf-8",
       "target": "es5",
       "noImplicitAny": false,
-      "sourceMap": false
+      "sourceMap": false,
+      "outDir": "build/"
   }
 }
