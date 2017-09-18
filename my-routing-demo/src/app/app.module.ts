@@ -6,12 +6,15 @@ import { HomeComponent } from "./home.component";
 import { AddUserComponent } from "./add-user.component";
 import { routing } from "./app.routing";
 import { LocationStrategy, HashLocationStrategy } from "@angular/common";
+import { UserDetailsComponent } from "./user-details.component";
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AddUserComponent 
+    AddUserComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
